@@ -1,5 +1,6 @@
 <template>
-  <div class="home">
+  <div>
+    <div class="home">
     <div>Todolist</div>
     <input type="text" @keyup.enter="addTodo(textInput)" v-model="textInput" />
     <button @click="addTodo(textInput)">Add</button>
@@ -12,6 +13,7 @@
       <button @click="item.isDone = !item.isDone">Done</button>
       <button @click="deleteTodo(item)">delete</button>
     </div>
+  </div>
   </div>
 </template>
 <script>

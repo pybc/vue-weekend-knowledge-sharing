@@ -1,20 +1,26 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
-import AnimeList from "../views/AnimeList.vue";
+import HomeView from "../views/HomeView.vue";
+import AnimeView from "../views/AnimeView.vue";
+import EventView from "../views/EventView.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "home",
+    component: HomeView,
   },
   {
-    path: "/anime-list",
-    name: "AnimeList",
-    component: AnimeList,
+    path: "/anime",
+    name: "animeView",
+    component: AnimeView,
+  },
+  {
+    path: "/event",
+    name: "eventView",
+    component: EventView,
   },
 ];
 

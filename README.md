@@ -1,4 +1,4 @@
-# test
+# vue-knowledge-sharing
 
 ## Project setup
 ```

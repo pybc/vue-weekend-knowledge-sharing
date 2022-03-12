@@ -1,5 +1,12 @@
 <template>
   <div class="home">
+    <div class="my-2">
+      <div>Name: {{ user.name }}</div>
+      <div>Firstname: {{ user.firstName }}</div>
+      <div>Lastname: {{ user.lastName }}</div>
+      <div>StudentId: {{ user.studentId }}</div>
+    </div>
+
     <b-col class="d-flex justify-content-center">
       <b-row>
         <b-form-input
@@ -45,6 +52,11 @@ export default {
       listTodo: [],
       id: 0,
     };
+  },
+  computed: {
+    user() {
+      return this.$store.getters.getUserData;
+    },
   },
   methods: {
     addTodo(textInput) {
